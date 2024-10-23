@@ -2,17 +2,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Create a New Post</title>
+    <title>Login</title>
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 
 </head>
 <body>
-    <h1>Create a New Post</h1>
-
+    <h1>Login</h1>
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Submit</button>
+        <button type="submit">Login</button>
     </form>
 </body>
 </html>
